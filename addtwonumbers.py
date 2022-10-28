@@ -20,3 +20,7 @@ def link2lst(link):
         newList.append(link.val)
         link = link.next
     return newList
+
+class Solution:
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        pass
