@@ -33,14 +33,13 @@ class Solution:
         nonDupString = ""
         
         for c in s:
-            print(test)
             # if c is already in the string, then move past the 1st occurence
             if c in nonDupString:       
                 nonDupString = nonDupString[nonDupString.index(c)+1:]
             #and append
             nonDupString = nonDupString + c
             #figure out what's longest
-            ans = max(ans, len(test))
+            ans = max(ans, len(nonDupString))
 
         return ans 
 
