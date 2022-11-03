@@ -22,6 +22,8 @@ class Solution:
             start = 0
         return ans # 42 is the answer
 
+
+#   More efficient solution.   O(n) complexity
     def lengthOfLongestSubstring(self, s: str) -> int:
         ans = 0
         
