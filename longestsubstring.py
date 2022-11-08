@@ -7,16 +7,17 @@ class Solution:
         winlength = len(s)
         start = 0
         found = False
-        ans = 0
+        ans = ""
         while (winlength >= 1) and (not found):
             while start+winlength <= len(s) and (not found):
                 window = s[start:start+winlength]
                 #print(window)
                 noDups = "".join(OrderedDict.fromkeys(window))
-                print(window, noDups)
+                #print(window, noDups)
                 if window == noDups:
                     found = True
-                    ans = len(window)
+                    #ans = len(window)
+                    ans = window
                 start +=1
             winlength -=1
             start = 0
@@ -49,7 +50,7 @@ s = ""
 s = "abcabcbb"
 s = "bbbbb"
 s ="hijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789hijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789hijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789hijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789hijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789hijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-
+s = "babad"
 sol = Solution()
 
-print(sol.lengthOfLongestSubstring(s))
+print(sol.lengthOfLongestSubstring2(s))
