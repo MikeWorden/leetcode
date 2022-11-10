@@ -2,6 +2,7 @@ from re import S
 from typing import List, OrderedDict
 
 class Solution:
+    
     # Bruteforce approach -- O(n^2)
     def lengthOfLongestSubstring2(self, s: str) -> int:
         winlength = len(s)
